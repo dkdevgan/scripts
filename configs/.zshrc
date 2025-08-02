@@ -80,25 +80,30 @@ export FZF_BASE=~/.fzf
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git
-	pylint 
-	vscode 
-	copybuffer 
-	colored-man-pages 
-	colorize 
-	command-not-found 
-	dirhistory 
-	zsh-syntax-highlighting 
-	zsh-autosuggestions
-	#zsh-autocomplete
-	fzf
-	fzf-tab
-	sudo
-	web-search
-	copyfile
-	history
-	jsontools
+plugins=(
+	    git
+	    pylint
+	    vscode
+	    copybuffer
+	    colored-man-pages
+	    colorize
+	    command-not-found
+	    dirhistory
+	    sudo
+	    web-search
+	    copyfile
+	    history
+	    jsontools
+	    fzf
+	    #fzf-tab
+	    zsh-autosuggestions
+	    zsh-syntax-highlighting
 	)
+
+# fzf environment variables
+export FZF_BASE=/home/mukesh/.fzf
+export FZF_PREVIEW_ADVANCED=true
+export FZF_DEFAULT_OPTS='-m --height 60% --layout=reverse --border'
 
 source $ZSH/oh-my-zsh.sh
 
