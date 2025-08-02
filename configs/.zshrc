@@ -124,6 +124,7 @@ export SAVEHIST=100000000
 #   export EDITOR='nvim'
 # fi
 
+export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -147,3 +148,5 @@ export SAVEHIST=100000000
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+bindkey '^ ' autosuggest-accept
