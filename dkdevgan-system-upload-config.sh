@@ -30,7 +30,7 @@ if [ -f ~/.dkdevgan-configured ]; then
 		echo -e "\n\nPushing All configs to scripts repo\n\n"
 		git push --set-upstream origin $BRANCH
 	fi
-	git checkout master
+	git checkout main
 else
 	read -p "Do you want this user to be configured as dkdevgan-configured? [N/y]" yn
 	case $yn in
